@@ -1,22 +1,24 @@
 package com.example.youtubedemo.item;
 
 public class ItemVideoYoutube {
-    private String title;
+    private String titleVideo;
     private String thumbnail;
     private String id;
+    private String titleChannel;
 
-    public ItemVideoYoutube(String title, String thumbnail, String id) {
-        this.title = title;
+    public ItemVideoYoutube(String titleVideo, String thumbnail, String id, String titleChannel) {
+        this.titleVideo = titleVideo;
         this.thumbnail = thumbnail;
         this.id = id;
+        this.titleChannel = titleChannel;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleVideo() {
+        return titleVideo;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitleVideo(String titleVideo) {
+        this.titleVideo = titleVideo;
     }
 
     public String getThumbnail() {
@@ -33,5 +35,13 @@ public class ItemVideoYoutube {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getTitleChannel() {
+        return titleChannel;
+    }
+
+    public void setTitleChannel(String titleChannel) {
+        this.titleChannel = titleChannel;
     }
 }

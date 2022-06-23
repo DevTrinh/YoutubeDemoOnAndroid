@@ -24,7 +24,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends YouTubeBaseActivity
 //    STEP 3;
-        implements InterfaceValueDefault, YouTubePlayer.OnInitializedListener {
+            implements InterfaceValueDefault, YouTubePlayer.OnInitializedListener {
     //STEP 1
     YouTubePlayerView ypView;
     String ID_VIDEO_DEMO_PLAY = "RgKAFK5djSk";
@@ -72,7 +72,6 @@ public class MainActivity extends YouTubeBaseActivity
             ypView.initialize(API_KEY, this);
         }
         super.onActivityResult(requestCode, resultCode, data);
-
     }
 
     private void getJsonYoutube() {

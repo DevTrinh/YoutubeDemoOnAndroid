@@ -22,10 +22,14 @@
         android:theme="@style/Theme.YoutubeDemo"
         tools:targetApi="31">
         <activity
+            android:name=".PlayVideo"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ListVideoYoutube"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
